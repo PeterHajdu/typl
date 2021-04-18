@@ -69,6 +69,7 @@ mutual
   term : Parser Term
   term = spaces *> term' <* spaces
 
+total
 eval1 : Term -> Maybe Term
 eval1 (TmIf TmTrue t2 t3) = Just t2
 eval1 (TmIf TmFalse t2 t3) = Just t3
