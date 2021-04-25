@@ -1,7 +1,7 @@
 l: *.idr
-	idris -p lightyear Main.idr -o l
+	idris -p specdris -p lightyear Main.idr -o l
 
 clean:
-	rm -f l *.ibc *.core
+	rm -f l *.ibc *.core *.idr~
 
 .phony: clean
